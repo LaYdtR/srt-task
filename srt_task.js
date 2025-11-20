@@ -2,7 +2,7 @@
  * Srt_Task *
  *****************/
 
-import { core, data, sound, util, visual, hardware } from './lib/psychojs-2025.1.1.js';
+import { core, data, sound, util, visual, hardware } from 'https://lib.pavlovia.org/psychojs-2025.1.1.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -1272,3 +1272,4 @@ async function quitPsychoJS(message, isCompleted) {
       
       return Scheduler.Event.QUIT;
     }
+
