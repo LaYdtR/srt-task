@@ -25,6 +25,12 @@ const psychoJS = new PsychoJS({
   debug: true
 });
 
+// Save data to Pavlovia
+psychoJS.setRedirectUrls(
+  'https://app.pavlovia.org/LaYdtR/srt-task-pro',
+  'https://app.pavlovia.org/LaYdtR/srt-task-pro'
+);
+
 // open window:
 psychoJS.openWindow({
   fullscr: true,
@@ -1272,4 +1278,5 @@ async function quitPsychoJS(message, isCompleted) {
       
       return Scheduler.Event.QUIT;
     }
+
 
